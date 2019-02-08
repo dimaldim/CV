@@ -1,7 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Dimitar
- * Date: 2/8/2019
- * Time: 8:08 AM
+/*
+ * Database connect information
  */
+$host = 'localhost';
+$dbName = 'mydb';
+$username = 'root';
+$password = '';
+
+/** Initializing database connection */
+try {
+    $dbCon = new PDO("mysql:host=" . $host . ";dbname=" . $dbName, $username, $password);
+} catch (Exception $e) {
+    echo $e->getMessage();
+}

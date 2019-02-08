@@ -1,3 +1,6 @@
+<?php
+require_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,134 +47,18 @@
     <main role="main">
 
         <div class="card w-100" id="about-me">
-            <div class="card-img-top d-flex align-items-center bg-light">
-                <div>
-                    <img class="img-thumbnail rounded" src="./images/me.png" alt="Dimitar Dimitrov">
-                </div>
-                <p class="col p-1 m-5">
-                    My name is Dimitar Aleksandrov Dimitrov. I was born on 13th May, 1992 in Veliko Tarnovo,
-                    Bulgaria. Currently living in Sofia, Bulgaria.
-                </p>
-            </div>
+            <?php include_once './common/descr.php'; ?>
         </div>
 
         <div class="row marketing">
-            <div class="col-12 animated jackInTheBox" id="education">
-                <h2 class="heading"><i class="fas fa-university"></i> Education</h2>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object edu-logo"
-                                 src="./images/softuni-logo.png"
-                                 alt="Softuni Logo">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Software University, Software engineering</h4>
-                        Currently studying JavaScript fundamentals.
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object edu-logo"
-                                 src="./images/utp-logo.png"
-                                 alt="UTP logo">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">UTP Sofia, Telecommunication systems</h4>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object edu-logo"
-                                 src="./images/no_img.png"
-                                 alt="">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">PGAVT "A.S.Popov", Sofia, Telecommunication systems</h4>
-                    </div>
-                </div>
-            </div>
+            <?php include_once './common/education.php'; ?>
         </div>
         <div class="col-12 animated jackInTheBox" id="experience">
-            <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
-            <ul>
-                <li>2017 - till now - Assistant Category Manager - responsibilities about stock management, promotional
-                    activities for the company, negotiating with suppliers and etc...
-                </li>
-                <li>2015 - 2017 - Deputy Manager, Store - managed a team of around 50 members.</li>
-                <li>2012 - 2015 - Supervisor, Store - managed a team of 10 members.</li>
-                <li>2011 - 2012 - Sales person white goods.</li>
-            </ul>
+            <?php include_once './common/experience.php'; ?>
         </div>
         <div class="col-12 animated jackInTheBox" id="certifications">
             <h2 class="heading"><i class="fas fa-certificate"></i> Certifications</h2>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object edu-logo"
-                             src="./images/no_img.png"
-                             alt="">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="#" target="_blank">Certificate of achievement B1 level of English</a></h4>
-                    Completed level B1.
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object edu-logo"
-                             src="./images/softuni.png"
-                             alt="Softuni Logo">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="https://softuni.bg/certificates/details/61072/994a9e7b" target="_blank">Technology
-                            Foundamentals course</a></h4>
-                    Certificate of completion of "Technology Foundamentals" course of Software University with PHP.
-                    6.00 / 6.00 , 2nd place of 1000+.
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object edu-logo"
-                             src="./images/udemy.png"
-                             alt="Udemy logo">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="https://www.udemy.com/certificate/UC-Q8PR2ABU/" target="_blank">Symfony 4</a></h4>
-                    Symfony 4 is a powerful PHP framework that would let you create not only websites but great web
-                    applications, APIs or mobile backends.
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object edu-logo"
-                             src="./images/udemy.png"
-                             alt="Udemy logo">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">
-                        <a href="https://www.udemy.com/certificate/UC-1V5J3NTD/" target="_blank">JavaScript
-                            Essentials</a></h4>
-                    Javascript essentials for web development.All the basics of
-                    Javascript including primitive types, arrays, functions, assignment operators, the window object and
-                    much more.
-                </div>
-            </div>
+            <?php include_once './common/certifications.php'; ?>
         </div>
         <div class="col-12 animated jackInTheBox" id="contact-me">
 
